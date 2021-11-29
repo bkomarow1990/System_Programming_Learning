@@ -1,0 +1,22 @@
+﻿<Window x:Class="TaskManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DockPanel LastChildFill="False" Grid.Column="0" Grid.Row="0">
+            <Button Width="100" Name="startBtn" Click="startBtn_Click">Start</Button>
+            <TextBox VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="200" Name="processNameTxtBox"> Enter Process name </TextBox>
+        </DockPanel>
+        <DataGrid Grid.Row="1" Name="processesDataGrid">
+            
+        </DataGrid>
+    </Grid>
+</Window>

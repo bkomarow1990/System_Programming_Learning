@@ -17,6 +17,10 @@ namespace System_Programming_Learning
                 Thread.Sleep(TimeSpan.FromMilliseconds(100));
             }
         }
+        //static void Add(object arr)
+        //{
+            
+        //}
 
         static void Main(string[] args)
         {
@@ -31,27 +35,31 @@ namespace System_Programming_Learning
 
 
             // Exmaple 2
-            //Console.WriteLine("Test1");
-            //ThreadPool.QueueUserWorkItem((el) =>
-            //{
-            //    //object
-            //    //AProcess
-            //    //Process
-            //    if (el is Process)
-            //    {
-            //        Console.WriteLine("All good it`s process");
-            //        var myProcess = el as Process;
-            //        for (int i = 0; i < 100000; i++)
-            //        {
-            //            Console.WriteLine("Test");
-            //        }
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("Vasya, it`s not process");
-            //    }
+            Console.WriteLine("Test1");
+            ThreadPool.QueueUserWorkItem((el) =>
+            {
+                //object
+                //AProcess
+                //Process
+                if (el is Process)
+                {
+                    Console.WriteLine("All good it`s process");
+                    var myProcess = el as Process;
+                    for (int i = 0; i < 100000; i++)
+                    {
+                        Console.WriteLine("Test");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Vasya, it`s not process");
+                }
 
-            //}, false);
+            }, Process.GetProcessesByName("chrome")[0]);
+
+
+            //ThreadPool.QueueUserWorkItem();
+
 
             //Console.WriteLine("Test2");
             #endregion
@@ -61,8 +69,8 @@ namespace System_Programming_Learning
             //Process.Start("chrome.exe", "youtube.com");  
 
             // Get process by name
-            Process[] processes = Process.GetProcessesByName("chrome");
-            Console.WriteLine("----------------Chrome Process----------------");
+            //Process[] processes = Process.GetProcessesByName("chrome");
+            //Console.WriteLine("----------------Chrome Process----------------");
             //Console.WriteLine(String.Join<Process>(" ", processes.ToArray())); 
             //Console.WriteLine($" Id : {chrome.Id}\n Name: {chrome.ProcessName}\n Priority: {chrome.PriorityClass}\n Machine Name: {chrome.MachineName}\n IsExited: {chrome.HasExited}");
             //Console.WriteLine("----------------------------------------------");
