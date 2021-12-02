@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System_Programming_Learning", "System_Programming_Learning\System_Programming_Learning.csproj", "{067AE65C-5710-4B11-A985-CC45158089EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3_Delegates_ThreadPool_GenericDelegates", "Lesson3_Delegates_ThreadPool_GenericDelegates\Lesson3_Delegates_ThreadPool_GenericDelegates.csproj", "{E56E69CC-F001-4422-B9B7-73599777803F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3_Delegates_ThreadPool_GenericDelegates", "Lesson3_Delegates_ThreadPool_GenericDelegates\Lesson3_Delegates_ThreadPool_GenericDelegates.csproj", "{E56E69CC-F001-4422-B9B7-73599777803F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{C78DFF5B-321E-49C5-844E-E81A21259E76}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager", "TaskManager\TaskManager.csproj", "{3E7AEED3-0FCB-4DAA-99A4-4E78F7C4C43D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registry_Lesson1", "Registry\Registry_Lesson1.csproj", "{1A85466F-821F-4231-9B1E-C5C094A78208}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3E7AEED3-0FCB-4DAA-99A4-4E78F7C4C43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E7AEED3-0FCB-4DAA-99A4-4E78F7C4C43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E7AEED3-0FCB-4DAA-99A4-4E78F7C4C43D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A85466F-821F-4231-9B1E-C5C094A78208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A85466F-821F-4231-9B1E-C5C094A78208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A85466F-821F-4231-9B1E-C5C094A78208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A85466F-821F-4231-9B1E-C5C094A78208}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
